@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+#main {
+    display: flex;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: white solid 2px;
+}
