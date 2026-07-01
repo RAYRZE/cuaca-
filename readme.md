@@ -1,0 +1,4 @@
+---Tujuan project ini----
+-belajar js dengan API
+-belajar module
+-sekalian belajar UI

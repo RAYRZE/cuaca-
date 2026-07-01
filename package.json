@@ -1,0 +1,27 @@
+{
+  "name": "cuaca",
+  "version": "1.0.0",
+  "description": "---Tujuan project ini---- -belajar js dengan API  -belajar module -sekalian belajar UI",
+  "main": "script.js",
+  "scripts": {
+    "format": "prettier . --write",
+    "oi": "apa",
+    "build":"vite build",
+    "vite":"vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RAYRZE/cuaca-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RAYRZE/cuaca-/issues"
+  },
+  "homepage": "https://github.com/RAYRZE/cuaca-#readme",
+  "devDependencies": {
+    "prettier": "^3.9.4",
+    "vite": "^8.1.2"
+  }
+}
