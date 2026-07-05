@@ -7,7 +7,7 @@
     "format": "prettier . --write",
     "oi": "apa",
     "build":"vite build",
-    "vite":"vite"
+    "dev":"vite"
   },
   "repository": {
     "type": "git",
