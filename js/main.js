@@ -6,6 +6,7 @@ const input = document.getElementById("input");
 let select = document.getElementById("countrySelect")
 async function fungsiCuaca(latitude,longitude) {
   const negara = new wheter(latitude,longitude);
+  displayState(gambar, true)
   await negara.Cuaca();
   display(gambar,negara);
   displayBackground(gambar,negara.suhu);
