@@ -1,9 +1,9 @@
 import { wheter } from "./wheter";
-import { display,displayBackground,displayState } from "./dom";
+import { display, displayBackground, displayState, displayMain } from "./dom";
 import { kota } from "./dataCountry";
 const gambar = document.getElementById("main");
-const input = document.getElementById("input");
 let select = document.getElementById("countrySelect")
+displayMain(gambar);
 async function fungsiCuaca(latitude,longitude) {
   const negara = new wheter(latitude,longitude);
   displayState(gambar, true)

@@ -19,3 +19,11 @@ export function displayState(gambar,loading){
     return
   }
 }
+export function displayMain(gambar){
+  if(gambar.textContent.length===0){
+    gambar.textContent = "Please pick country"
+    console.log("kosong")
+  }else{
+    return
+  }
+}

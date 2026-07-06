@@ -7,7 +7,6 @@ export class wheter {
     this.loading = false
   }
   async Cuaca() {
-    this.loading=true;
   try{
     const response = await fetch(
       `https://api.open-meteo.com/v1/forecast?latitude=${this.latitude}&longitude=${this.longitude}&hourly=temperature_2m&models=jma_seamless`,
