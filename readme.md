@@ -9,3 +9,5 @@ membuat search negara untuk mencari suhu nya
 -tugas besok 
 membuat loading state
 -tugas nanti buat main jadi control utama.
+-tugas besok 
+buat matahari yg berubah ubah warna tergantung suhu.
