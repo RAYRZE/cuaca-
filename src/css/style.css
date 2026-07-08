@@ -4,7 +4,13 @@ body {
   align-items: center;
   justify-content: center;
   gap: 64px;
-  background-color: aquamarine;
+
+}
+.test {
+  background-image:url(../assets/bg.png);
+  height: 100px;
+  width: 100px;
+  background-size: cover;
 }
 #main {
   display: flex;
@@ -77,41 +83,4 @@ main {
 }
 .bottom {
   transform: translate(-50%, -50%) rotate(180deg) translateY(-90px);
-}
-.atas {
-  transform: translate(-50%, -50%) rotate(45deg) translateY(-90px);
-}
-.kanan {
-  transform: translate(-50%, -50%) rotate(135deg) translateY(-90px);
-}
-.bawah {
-  transform: translate(-50%, -50%) rotate(235deg) translateY(-90px);
-}
-.kiri {
-  transform: translate(-50%, -50%) rotate(315deg) translateY(-90px);
-}
-.test {
-  animation: putar 15s linear infinite;
-  position: relative;
-  height: 80px;
-  width: 80px;
-}
-.bola {
-  width: 80px;
-  height: 80px;
-  background-color: antiquewhite;
-}
-.b {
-  position: absolute;
-  background-color: brown;
-  top: 50%;
-  left: 50%;
-  height: 18px;
-  width: 36px;
-}
-.a {
-  transform: translate(-50%,-50%) rotate(90deg) translateY(-50px);
-}
-.c {
-  transform: translate(-50%, -50%) rotate(135deg) translateY(-50px);
 }
