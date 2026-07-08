@@ -1,13 +1,17 @@
 import { wheter } from "./wheter";
-import { display, displayBackground, displayState, displayMain } from "./dom";
+import { display, displayBackground, displayState, displayMain,displaySun,displayRay } from "./dom";
 import { kota } from "./dataCountry";
 const gambar = document.getElementById("main");
 let select = document.getElementById("countrySelect")
+const matahari = document.getElementById("matahari")
+const ray = document.querySelectorAll(".ray")
 displayMain(gambar);
 async function fungsiCuaca(latitude,longitude) {
   const negara = new wheter(latitude,longitude);
   displayState(gambar, true)
   await negara.Cuaca();
+  displayRay(ray,negara.suhu)
+  displaySun(matahari,negara.suhu)
   display(gambar,negara);
   displayBackground(gambar,negara.suhu);
   displayState(gambar,negara.loading)

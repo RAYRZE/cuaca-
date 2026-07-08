@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 64px;
   background-color: aquamarine;
 }
 #main {
@@ -25,4 +25,93 @@ body {
 }
 #p {
   margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+#matahari {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid black;
+  height: 120px;
+  width: 120px;
+  background-color: white;
+}
+
+@keyframes putar {
+  from{
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.ray {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 30px;
+  background-color: white;
+}
+.sun {
+  animation: putar 15s linear infinite;
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+.top {
+  transform: translate(-50%, -50%) rotate(0deg) translateY(-90px);
+}
+.right {
+  transform: translate(-50%, -50%) rotate(90deg) translateY(-90px);
+}
+.left {
+  transform: translate(-50%, -50%) rotate(270deg) translateY(-90px);
+}
+.bottom {
+  transform: translate(-50%, -50%) rotate(180deg) translateY(-90px);
+}
+.atas {
+  transform: translate(-50%, -50%) rotate(45deg) translateY(-90px);
+}
+.kanan {
+  transform: translate(-50%, -50%) rotate(135deg) translateY(-90px);
+}
+.bawah {
+  transform: translate(-50%, -50%) rotate(235deg) translateY(-90px);
+}
+.kiri {
+  transform: translate(-50%, -50%) rotate(315deg) translateY(-90px);
+}
+.test {
+  animation: putar 15s linear infinite;
+  position: relative;
+  height: 80px;
+  width: 80px;
+}
+.bola {
+  width: 80px;
+  height: 80px;
+  background-color: antiquewhite;
+}
+.b {
+  position: absolute;
+  background-color: brown;
+  top: 50%;
+  left: 50%;
+  height: 18px;
+  width: 36px;
+}
+.a {
+  transform: translate(-50%,-50%) rotate(90deg) translateY(-50px);
+}
+.c {
+  transform: translate(-50%, -50%) rotate(135deg) translateY(-50px);
 }
