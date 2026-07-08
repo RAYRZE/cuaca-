@@ -83,3 +83,15 @@ main {
 .bottom {
   transform: translate(-50%, -50%) rotate(180deg) translateY(-90px);
 }
+.atas {
+  transform: translate(-50%, -50%) rotate(45deg) translateY(-90px);
+}
+.kanan {
+  transform: translate(-50%, -50%) rotate(135deg) translateY(-90px);
+}
+.kiri {
+  transform: translate(-50%, -50%) rotate(225deg) translateY(-90px);
+}
+.bawah {
+  transform: translate(-50%, -50%) rotate(315deg) translateY(-90px);
+}
