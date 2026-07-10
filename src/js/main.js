@@ -5,6 +5,7 @@ const gambar = document.getElementById("main");
 let select = document.getElementById("countrySelect")
 const matahari = document.getElementById("matahari")
 const ray = document.querySelectorAll(".ray")
+const searchInput = document.getElementById("search");
 displayMain(gambar);
 async function fungsiCuaca(latitude,longitude) {
   const negara = new wheter(latitude,longitude);
@@ -19,7 +20,7 @@ async function fungsiCuaca(latitude,longitude) {
 function mainChange(){
   let cities = Object.entries(kota).map(([key, { lat, lon }]) => ({
     value: key,
-    name: key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, " $1"),
+    name: key,
     action: () => fungsiCuaca(lat, lon),
   }));
   cities.forEach(city => {
@@ -32,7 +33,24 @@ function mainChange(){
   select.addEventListener("change", (e) => {
     const selectedValue = e.target.value;
     const matchedCity = cities.find(c => c.value === selectedValue);
-    if (matchedCity) matchedCity.action();
+    if (matchedCity) {
+      matchedCity.action();
+      searchInput.value=matchedCity.value;
+    }
+  });
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      const value = searchInput.value.toLowerCase();
+      const find = cities.find(c => c.name.includes(value))
+      if(find){
+        find.action();
+        select.value=find.value
+        console.log(select.value);
+      }
+      else{
+        gambar.textContent=`not found`
+      }
+    }
   });
 };
 mainChange();

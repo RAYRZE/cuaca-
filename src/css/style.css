@@ -95,3 +95,9 @@ main {
 .bawah {
   transform: translate(-50%, -50%) rotate(315deg) translateY(-90px);
 }
+#search {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
